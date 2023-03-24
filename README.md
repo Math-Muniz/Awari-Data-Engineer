@@ -53,15 +53,15 @@ O uso de softwares específicos, como editores de código, programas para design
 ## 2.5 Outras necessidades
 Outras orientações pontuais sobre o funcionamento do curso serão fornecidas por e-mail ou poderão ser obtidas junto ao atendimento da Awari (veja o tópico “Obtendo Ajuda”, logo a seguir).
 
-# 4. Obtendo Ajuda
+# 3. Obtendo Ajuda
 A seguir, temos um roteiro de situações que pode ajudar em caso de dúvidas:
 
-## 4.1 Erros em conteúdos ou práticas
+## 3.1 Erros em conteúdos ou práticas
 Caso você perceba algum erro nos conteúdos e nas práticas (erro de escrita, erros de informação, erros em códigos etc.), informe-o no campo de feedback da própria plataforma ou envie pelo e-mail meajuda@awari.com.br. 
 
 Procure detalhar o que ocorre e, se possível, forneça "prints" (imagens) das telas, para facilitar nossa verificação. A Awari irá analisar o caso e, se for procedente, providenciará correção.
 
-# 5. Créditos da produção
+# 4. Créditos da produção
 Os materiais deste curso foram elaborados pela equipe interna da Awari em parceria com o especialista em Engenharia de Dados Alex Maramaldo, durante janeiro e fevereiro de 2023. Os materiais foram editados e disponibilizados na Plataforma Awari em fevereiro de 2023, e podem receber atualizações ao longo do tempo.
 
 Fazemos tudo isso para que você tenha a melhor experiência de ensino. Desejamos uma ótima jornada e conte com a Awari em sua trajetória de carreira!
