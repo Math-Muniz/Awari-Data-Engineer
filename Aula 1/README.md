@@ -2,7 +2,7 @@
 
 Esta é a tarefa proposta para a 1ª aula do curso de Engenharia de Dados da Awari. Siga as instruções para desenvolvê-la e entregá-la.
 
-O que fazer?
+# O que fazer?
 
 Com base nas informações que você levantou na prática “Requisitos para Vagas”, durante a aula — e acrescentando mais dados das fontes pesquisadas —, escreva um texto documentando:
 
