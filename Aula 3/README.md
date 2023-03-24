@@ -16,6 +16,7 @@ Para isso, o passo a passo é o seguinte — as etapas também estão instruída
 5. Aguardar a execução;
 
 6. Explorar junto da turma o que o workspace oferece e explicar o que ocorreu nos bastidores — o ambiente montado permite desenvolvimento em Python no JupyterLab Server, uso de Apache Kafka, Apache Spark com PySpark, Airflow, MongoDB, PostgreSQL, além de contar com rotinas e automatizações nos bastidores. Sugere-se, especificamente, verificar com a turma:
+
   6.1 se o docker-compose está funcionando;
   
   6.2 se as imagens estão “up”, além de fazer uma conexão SSH usando o comando de bash em uma imagem docker;
