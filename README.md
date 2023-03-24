@@ -26,20 +26,35 @@ Cada aula tem 2 horas de duração. A jornada de uma aula consiste, normalmente,
 O roteiro de aulas é exatamente o mesmo que está anunciado no site da Awari e que você confere aqui na Plataforma Awari: 
 
 Introdução à Engenharia de Dados
+
 Big Data, Data Lakes e Data Warehouses
+
 Configurando Ambiente com Docker
+
 Python para Engenharia de Dados
+
 Iniciando Tratamento de Dados
+
 Tratamento com Minio e MongoDB
+
 Batch, Diferencial e Kafka Streaming
+
 Spark e Fontes de Dados
+
 Airflow e Orquestração de Processos
+
 Projeto I: Preparando a Infra
+
 Projeto II: Tratamento
+
 Projeto III: Exportação para EDW
+
 Fornecendo Dados para Analytics
+
 AWS I: Introdução à Plataforma
+
 AWS II: Publicando Projeto na Nuvem
+
 Futuro da Engenharia de Dados
 
 ## 2.3 Materiais
