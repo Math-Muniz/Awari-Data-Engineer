@@ -32,8 +32,8 @@ class BIPgOperator(BaseOperator):
         super().__init__(**kwargs)
         self.s3_key = s3_key
         self.tablename = tablename
-        self.custom_s3 = CustomS3Hook(bucket='aula-10')
-        self.pg_hook = PostgresHook(postgres_conn_id="pg_awari")
+        self.custom_s3 = CustomS3Hook(bucket='aula-10')  # Custom S3Hook for interacting with S3
+        self.pg_hook = PostgresHook(postgres_conn_id="pg_awari")  # PostgresHook for interacting with PostgreSQL
         self.engine = self.pg_hook.get_sqlalchemy_engine()
 
     def execute(self, context):
@@ -41,22 +41,21 @@ class BIPgOperator(BaseOperator):
         return self.s3_key
         
     def process_to_pg(self):
-        s3_object = self.custom_s3.get_object(key=self.s3_key)
-        s3_data = s3_object.read()
-        df = pd.read_parquet(BytesIO(s3_data))
-        self.insert_to_postgres(df)
+        s3_object = self.custom_s3.get_object(key=self.s3_key)  # Get the S3 object
+        s3_data = s3_object.read()  # Read the data from the S3 object
+        df = pd.read_parquet(BytesIO(s3_data))  # Read the parquet data into a DataFrame
+        self.insert_to_postgres(df)  # Insert DataFrame into PostgreSQL table
         
     def insert_to_postgres(self, df):
-        pg_conn = self.pg_hook.get_conn()
-        cursor = pg_conn.cursor()
-        table_columns = ','.join(df.columns)
-        table_values = ','.join(['%s' for _ in df.columns])
-        insert_query = f"INSERT INTO {self.tablename} ({table_columns}) VALUES ({table_values})"
-        cursor.executemany(insert_query, [tuple(row) for row in df.values.tolist()])
-        pg_conn.commit()
-        cursor.close()
-        pg_conn.close()
-
+        pg_conn = self.pg_hook.get_conn()  # Get the PostgreSQL connection
+        cursor = pg_conn.cursor()  # Create a cursor
+        table_columns = ','.join(df.columns)  # Get the column names
+        table_values = ','.join(['%s' for _ in df.columns])  # Create placeholders for values
+        insert_query = f"INSERT INTO {self.tablename} ({table_columns}) VALUES ({table_values})"  # Create the INSERT query
+        cursor.executemany(insert_query, [tuple(row) for row in df.values.tolist()])  # Execute the query with DataFrame values
+        pg_conn.commit()  # Commit the changes
+        cursor.close()  # Close the cursor
+        pg_conn.close()  # Close the connection
 
 
 export_to_postgres_task = BIPgOperator(
