@@ -1,4 +1,4 @@
-# Tarefa: Report da Covid no Metabase
+# Tarefa: Report da Covid
 Esta é a tarefa proposta para a 13ª aula do curso de Engenharia de Dados da Awari. Siga as instruções para desenvolvê-la e entregá-la.
 
 # O que fazer?
